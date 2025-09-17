@@ -10,7 +10,9 @@ Hardware
    detailed
    changelog
 
-The :doc:`overview` page provides a high-level summary of the hardware design and components locations, while the :doc:`detailed` page takes a look at the various blocks and connector pinouts. The :doc:`changelog` documents the revision history and updates made to the board over time.
+The :doc:`overview` page provides a high-level summary of the hardware design and component locations, while the :doc:`detailed` page takes a look at the various different blocks in more detail, along with providing connector pinouts. 
+
+The :doc:`changelog` documents the revision history and updates made to the board over time.
 
 The hardware design files, including schematics and PCB layouts, are available in the `LMS8001 Companion GitHub repository`_. 
 

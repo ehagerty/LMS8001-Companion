@@ -205,7 +205,7 @@ Matching
 USB Connector
 ^^^^^^^^^^^^^
 
-The USB connector was changed from Mini B USB Type C.
+The USB connector was changed from Mini Type B to Type C.
 
 .. table:: Table 7. Replacement for J1 component.
    :widths: auto
