@@ -87,9 +87,9 @@ RF Network
 LMS8001 Companion is based upon the LMS8001A 4-channel up/down conversion RFIC. There are a total of 8 signals, 4 inputs and 4 outputs. Depending on whether
 upconversion or downconversion, the input signals are either in IF (lower frequency bands) or RF (higher frequency bands). 
 
-Similarly and depending upon whether it is upconversion or downconversion, the output signals are in RF (higher frequency bands) or IF (lower frequency bands). All these signals are connected to either SMA or UFL connectors. 
+Similarly and depending upon whether it is upconversion or downconversion, the output signals are in RF (higher frequency bands) or IF (lower frequency bands). All these signals are connected to either SMA or U.FL connectors. 
 
-LMS8001A can be configured to be supplied with such LO signal, where the chip internal PLL will not be active. This signal is provided to the board via SMA connector J3.
+LMS8001A can be configured so that the internal PLL is not active and instead an external LO signal is provided to the board via SMA connector J3.
 
 .. table:: Table 4. RF signals and their connectors.
    :widths: auto
@@ -177,14 +177,10 @@ controls the LMS8001A and ADF4002 chips. In addition to the SPI bus,
 several predefined GPIO pins are used for digital control signals such
 as RESET, ENABLE, etc.
 
-Apart from this group, there is another independent group of GPIO
-signals used to preconfigure the LMS8001A into one of its already saved
-states. Using GPIO pins for reconfiguration is the fastest method,
-compared to SPI, and is particularly advantageous in frequency-hopping
+Another group of GPIO signals can be used to preconfigure the LMS8001A into one of its already saved states. Using GPIO pins for reconfiguration is the fastest method, compared to SPI, and is particularly advantageous in frequency-hopping
 applications involving the LMS8001A.
 
-Another minor group, free MCU GPIO signals, are used to connect to LEDs
-as indicators (LED1, LED2, LED3).
+MCU GPIO signals are also used to control indicator LEDs (LED1, LED2, LED3).
 
 .. figure:: /images/LMS8001_Companion-Digital_Block_Diagram.svg
    :alt: LMS8001 Companion Digital Block Diagram
@@ -198,10 +194,13 @@ Power Distribution
 The LMS8001 Companion board has an external 5V (+5V_EXT) power
 connector (J2) that supplies power to the board. This is the recommended
 configuration. Alternatively, 5V can be supplied via the USB connector
-(J1). One of these two options is selected using the JP1 jumper. U14,
-shown in Figure 9, is protection circuit which ensures proper power-on
-of the board. An auxiliary 3.3V supply can also be provided to the
-board via the P3 connector, pin 1, please see Table 3.
+(J1). One of these two options is selected using the JP1 jumper. 
+
+U14, shown in Figure 9, is protection circuit which ensures proper power-on
+of the board. 
+
+An auxiliary 3.3V supply can also be provided to the
+board via the P3 connector pin 1 and for details see Table 3.
 
 .. figure:: /images/LMS8001_Companion-Power_Block_Diagram.svg
    :alt: LMS8001 Companion Power Block Diagram
