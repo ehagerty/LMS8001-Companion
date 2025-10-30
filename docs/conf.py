@@ -108,7 +108,8 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx-mathjax-offline',
     'sphinx_code_tabs',
-    'sphinx_rtd_theme'
+    'sphinx_rtd_theme',
+    'notfound.extension'
 ]
 
 # Allow same section headings and thus labels to be used across documents.

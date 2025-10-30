@@ -15,6 +15,7 @@ snowballstemmer==3.0.1
 Sphinx==8.2.3
 sphinx-code-tabs==0.5.5
 sphinx-mathjax-offline==0.0.2
+sphinx-notfound-page==1.1.0
 sphinx-rtd-theme==3.0.2
 sphinxcontrib-applehelp==2.0.0
 sphinxcontrib-devhelp==2.0.0
